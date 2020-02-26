@@ -40,7 +40,7 @@ h1{
 
 }
 
-.list{
+.burgerlist{
 display: table;
 justify-content: space-around;
 flex-direction: column;
@@ -57,30 +57,30 @@ border-right:5px solid black;
 border-left:5px solid black;
 }
 
-.list a{
+.burgerlist a{
     display: table-cell;
     width: 100%;
     vertical-align: middle;
     font-size: 30px
 }
 
-.list > .mainLinks {
+.burgerlist > .mainLinks {
     display: table-row; 
     text-align: center;
     
 }
 
-.list > .mainLinks:hover {
+.burgerlist > .mainLinks:hover {
     background-color: yellow;
 }
 
 
-.list a {
+.burgerlist a {
     width: 100%;
     border-top: 5px solid rgb(0, 0, 0);
 }
 
-.list li{
+.burgerlist li{
     list-style:none;
 }
 .mainLinks{
@@ -119,14 +119,55 @@ transition: all 0.3s;
     width: calc(100vw- 16px);
     display:flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    text-align: center
 }
 .branch img{
     width: 80vw;
 }
 .branch h2{
-    font-size: 15vw;
+    font-size: 13vw;
+    position: relative;
+    
 }
 .branch t{
     font-size: 20px;
+}
+.lowernav{
+    width: 100vw;
+    height: 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 5px solid white;
+    background: white;
+    display: grid;
+    grid-template-areas: 
+    "l1 l2 l3 l4";
+    align-items: center
+}
+.lowernav t{
+    font-size: 20px
+}
+.lowernav img{
+    width: auto;
+    height: 9vh;
+
+}
+#link1{
+    grid-area: l1;
+}
+#link2{
+    grid-area: l2;
+}
+#link3{
+    grid-area: l3;
+}
+#link4{
+    grid-area: l4;
+    border-right:5px solid black
+}
+.lowernav a{
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
 }

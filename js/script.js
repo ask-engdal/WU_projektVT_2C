@@ -1,5 +1,5 @@
 function togglemenu() {
-    document.querySelector('.list').classList.toggle('listactive')
+    document.querySelector('.burgerlist').classList.toggle('listactive')
     document.querySelector('.burger').classList.toggle('toggle')
 }
 
