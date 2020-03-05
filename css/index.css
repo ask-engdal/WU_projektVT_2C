@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 a {
@@ -83,9 +84,6 @@ border-left:5px solid black;
 .burgerlist li{
     list-style:none;
 }
-.mainLinks{
-    border-top:5px solid black;
-}
 
 
 .burger div{
@@ -115,12 +113,13 @@ transition: all 0.3s;
     position: relative;
     z-index: -1;
     border: 5px solid black;
-    height: 300vh;
+    height:calc(100% + 150px);
     width: calc(100vw- 16px);
     display:flex;
     flex-direction: column;
     align-items: center;
-    text-align: center
+    text-align: center;
+    padding: 
 }
 .branch img{
     width: 80vw;
@@ -134,33 +133,27 @@ transition: all 0.3s;
     font-size: 20px;
 }
 .lowernav{
-    width: 100vw;
-    height: 10vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    border-bottom: 5px solid white;
-    background: white;
-    display: grid;
-    grid-template-areas: 
-    "l1 l2 l3 l4";
-    align-items: center
+    position:static;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    
 }
-.lowernav t{
-    font-size: 20px
+.lowernav a p{
+    font-size: 20px;
+    text-align: center
 }
-.lowernav img{
+.mainLinks{
+    border-top:0.5vw solid black;
+    display: flex;
+    flex-direction: column;
+}
+.mainLinks img{
+    height: 20vw;
     width: auto;
-    height: 9vh;
-
-}
-#link1{
-    grid-area: l1;
-}
-#link2{
-    grid-area: l2;
-}
-#link3{
-    grid-area: l3;
 }
 #link4{
     grid-area: l4;
@@ -170,4 +163,14 @@ transition: all 0.3s;
     border-bottom: 5px solid black;
     border-top: 5px solid black;
     border-left: 5px solid black;
+}
+.contact{
+    position: relative;
+    height: calc(15vh);
+    bottom:0px;
+    width:100%;
+    text-align: left;
+}
+.contact p{
+    padding: 5px
 }
