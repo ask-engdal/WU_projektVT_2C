@@ -30,12 +30,12 @@ h1{
     width: calc(100vw - 35px);
     position: fixed;
     display:flex;
+    align-items: center;
+    justify-content: center;
     border: 5px solid black;
-
 }
 .burgermenu{
     position: absolute;
-    align-self: center;
     right: 5%;
 }
 
@@ -44,9 +44,10 @@ display: table;
 justify-content: space-around;
 flex-direction: column;
 position:absolute;
-right: calc(-30vw - 15px);
+right: calc(-35vw - 10px);
 height:75vh;
-top:7vw;
+top:calc(4vw + 5px);
+align-items: center;
 width:30vw;
 transition: all 1s;
 background-color: red;
