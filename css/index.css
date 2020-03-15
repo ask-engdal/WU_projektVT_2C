@@ -15,28 +15,30 @@ body {
 }
 
 h1{
+    font-size: 30px;
     text-align: left;
     justify-content: center;
-    margin: 1px;
+    margin: 0 auto;
     
 }
 .title a{
-    font-size: 5vw;
-    margin: 20px;
+    font-size: 35px
 }
 .title{
     background-color: red;
-    height: 7vw;
-    width: calc(100vw - 35px);
+    height: calc(10vh - 10px);
+    width: calc(100vw - 10px);
     position: fixed;
-    display:flex;
-    align-items: center;
-    justify-content: center;
     border: 5px solid black;
 }
 .burgermenu{
-    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 2vh;
     right: 5%;
+
 }
 
 .burgerlist{
@@ -46,7 +48,7 @@ flex-direction: column;
 position:absolute;
 right: calc(-35vw - 10px);
 height:75vh;
-top:calc(4vw + 5px);
+top:calc(8vh - 5px);
 align-items: center;
 width:30vw;
 transition: all 1s;
@@ -107,6 +109,7 @@ transition: all 0.3s;
 }
 
 .branch{
+    top: calc(10vh - 5px);
     position: relative;
     z-index: -1;
     border: 5px solid black;
@@ -122,7 +125,7 @@ transition: all 0.3s;
     width: 80vw;
 }
 .branch h2{
-    font-size: 7vw;
+    font-size: 13vw;
     position: relative;
     
 }
@@ -130,7 +133,7 @@ transition: all 0.3s;
     font-size: 20px;
 }
 .lowernav{
-    width: calc(100vw - 25px);
+    width: calc(100vw - 15px);
     height: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -141,6 +144,8 @@ transition: all 0.3s;
     "l1 l2 l3 l4";
     align-items: center;
     border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right:5px solid black
 }
 .lowernav t{
     font-size: 20px
@@ -164,7 +169,7 @@ transition: all 0.3s;
     border-right:5px solid black
 }
 .lowernav a{
-    font-size: 3vw;
+
     border-top: 5px solid black;
     border-left: 5px solid black;
 }
