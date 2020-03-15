@@ -11,32 +11,25 @@ a {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden;   
 }
-
-h1{
-    font-size: 30px;
-    text-align: left;
-    justify-content: center;
-    margin: 0 auto;
-    
-}
-.title a{
-    font-size: 35px
+.title h1{
+    font-size: 5vw;
+    align-self: center;
+    margin-left: 10px;
 }
 .title{
     background-color: red;
-    height: calc(10vh - 10px);
+    height: 9vw;
     width: calc(100vw - 10px);
     position: fixed;
+    display:flex;
     border: 5px solid black;
+
 }
 .burgermenu{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 2vh;
+    position: absolute;
+    align-self: center;
     right: 5%;
 
 }
@@ -46,10 +39,9 @@ display: table;
 justify-content: space-around;
 flex-direction: column;
 position:absolute;
-right: calc(-35vw - 10px);
+right: calc(-30vw - 15px);
 height:75vh;
-top:calc(8vh - 5px);
-align-items: center;
+top:9vw;
 width:30vw;
 transition: all 1s;
 background-color: red;
@@ -109,7 +101,7 @@ transition: all 0.3s;
 }
 
 .branch{
-    top: calc(10vh - 5px);
+    top: calc(9vw);
     position: relative;
     z-index: -1;
     border: 5px solid black;
@@ -133,7 +125,7 @@ transition: all 0.3s;
     font-size: 20px;
 }
 .lowernav{
-    width: calc(100vw - 15px);
+    width: calc(100vw);
     height: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -144,8 +136,6 @@ transition: all 0.3s;
     "l1 l2 l3 l4";
     align-items: center;
     border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    border-right:5px solid black
 }
 .lowernav t{
     font-size: 20px
