@@ -21,7 +21,7 @@ body {
 .title{
     background-color: red;
     height: 9vw;
-    width: calc(100vw - 10px);
+    width: calc(100% - 10px);
     position: fixed;
     display:flex;
     border: 5px solid black;
@@ -79,30 +79,30 @@ border-left:5px solid black;
 
 
 .burger div{
-width:40px;
-height:5px;
-margin:6px;
+width:4vw;
+height:0.5vw;
+margin:0.6vw;
 border-radius: 0%;
 background-color: black;
 transition: all 0.3s;
 }
 
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 10px)
+    transform: rotate(-45deg) translate(-0.5vw, 1vw)
 }
 .toggle .line2{
     opacity:0%
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px, -10px)
+    transform: rotate(45deg) translate(-0.5vw, -1vw)
 }
 .listactive{
     transform: translateX(calc(-30vw -  10px)); 
 }
 
 .branch{
-    top: calc(9vw);
     position: relative;
+    top: 0px;
     z-index: -1;
     border: 5px solid black;
     height:calc(100% + 150px);
@@ -113,19 +113,20 @@ transition: all 0.3s;
     text-align: center;
     padding:0px 
 }
-.branch img{
-    width: 80vw;
+.titleimage{
+    position: relative;
+    width: 70vw;
 }
 .branch h2{
-    font-size: 13vw;
+    font-size: 7vw;
     position: relative;
     
 }
-.branch t{
+.branch p{
     font-size: 20px;
 }
 .lowernav{
-    width: calc(100vw);
+    width: calc(100% + 10px);
     height: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -137,12 +138,14 @@ transition: all 0.3s;
     align-items: center;
     border-bottom: 5px solid black;
 }
-.lowernav t{
-    font-size: 20px
+.lowernav p{
+    font-size: 2vw;
 }
 .lowernav img{
     width: auto;
     height: 10vw;
+    
+    border: 5px solid black;
 
 }
 #link1{
@@ -166,7 +169,6 @@ transition: all 0.3s;
 .contact{
     position: relative;
     height: calc(15vh);
-    bottom:0px;
     width:100%;
     text-align: left;
 }
