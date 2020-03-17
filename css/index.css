@@ -13,6 +13,7 @@ a {
 body {
     overflow-x: hidden;   
 }
+
 .title h1{
     font-size: 5vw;
     align-self: center;
@@ -103,7 +104,6 @@ transition: all 0.3s;
 .branch{
     position: relative;
     top: 0px;
-    z-index: -1;
     border: 5px solid black;
     height:calc(100% + 150px);
     width: calc(100vw- 16px);
@@ -112,6 +112,9 @@ transition: all 0.3s;
     align-items: center;
     text-align: center;
     padding:0px 
+}
+.zlevel{
+    z-index: -1;
 }
 .titleimage{
     position: relative;
@@ -125,6 +128,7 @@ transition: all 0.3s;
 .branch p{
     font-size: 20px;
 }
+
 .lowernav{
     width: calc(100% + 10px);
     height: auto;
@@ -144,7 +148,6 @@ transition: all 0.3s;
 .lowernav img{
     width: auto;
     height: 10vw;
-    
     border: 5px solid black;
 
 }
