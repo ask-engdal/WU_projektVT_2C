@@ -100,20 +100,22 @@
         <tr>          
             <td>10</td>
             <td>
-            <!-- Vad görs på lektionen vecka 10? -->
+            <!-- Vad görs på lektionen vecka 10? --> fortsätter arbeta på responsiviteten och layouten
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 10? -->
+            Löser kaoset som jag skapat under lektionen
             </td>
         </tr>
 
         <tr>           
             <td>11</td>
             <td>
-            <!-- Vad görs på lektionen vecka 11? -->
+            <!-- Vad görs på lektionen vecka 11? -->Fixar photoshopkriterierna och kompletterar layouten
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 11? -->
+            Löser kaoset som jag skapat under lektionen igen.
             </td>
         </tr>
 
@@ -121,6 +123,7 @@
             <td>12</td>
             <td>
             <!-- Vad görs på lektionen vecka 12? -->
+            Testa sidan enligt instruktioner fårn förra veckan och fixa taggarna i html och andra mindre saker för 
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 12? -->
@@ -157,13 +160,14 @@
     Denna lektionen har ingenting fungerat alls. Jag fick ett problem med undermenyn där jag ville att texten skulle vara ovanför bilden oavsett hur hög den var. Jag fixade detta med hjälp av att göra det till felxboxar istället för en grid. Detta skapade dock en rad olika problem som jag inte har lyckats lösa än. Det som kvarstår är att när man scalar sidan så blir den lite för bred eller lite för smal vilket jag ska fixa till nästa eller under nästa lektion. Började även på en footer med kontaktinformation och liknande men kom aldrig så långt på den
     <h3>Lektion vecka 11</h3>
     <!-- Fyll på med dokumentation här. --> Idag har jag övat lite på photoshop. Jag har skapat en hårt processerad bild från flera olika element (använde även lagermasker), bilden finns att hitta i misc-mappen. Jag har också (troligtvis) färdigställt layouten och responiviteten till olika skärmförhållanden via endast css. Ett problem jag stötte på var att jag tidigare har skrivit många av mina grejer som fixed istället för förhållande till parent (absolute). Delar av problemet låg i sättet på vilket jag byggt upp min htmlkod, närmare bestämmt klasserna. Jag har därför ändrat på dom så att burgermenykrysset är en klass och själva menyn är en annan, utan någon annan parentklass än titeln. Jag har även upptäckt align-self vilket är som align-content fast på sig själv, detta använde jag för krysset. 
-    Mellan lektionerna har jag nu nästan färdigställt all design och responsivitet, efter att på något sett missat att uppladda det sista fårn förra veckan till github. Jag upptäckte dock ett problem med "lower nav" vilket är att länkarna i den inte fungerade. Problemet hittade jag genom att första ta bort all min css, vilket gjorde så att länkarna fungerade, och sedan genom att följa upp det med en manuell binary search på csskoden där jag tog bort delar enligt binary search logiken. Jag kom till slut fram till att problemet var z-index taggen. 
+    Mellan lektionerna har jag nu nästan färdigställt all design och responsivitet, efter att på något sett missat att uppladda det sista fårn förra veckan till github. Jag upptäckte dock ett problem med "lower nav" vilket är att länkarna i den inte fungerade. Problemet hittade jag genom att första ta bort all min css, vilket gjorde så att länkarna fungerade, och sedan genom att följa upp det med en manuell binary search på csskoden där jag tog bort delar enligt binary search logiken. Jag kom till slut fram till att problemet var z-index taggen. Jag löste detta genom att flytta tagen till bara den delen av html som faktiskt bör beröras av tagen. Nästa lektion planerar jag att klippa bilderna så att dom passar bättre till formen, och att börja fylla sidan med faktisk innehåll.
     <h3>Lektion vecka 12</h3>
     <!-- Fyll på med dokumentation här. -->
+    Jag började med att validera htmlkoden via validator.w3.org och fick bara 2 fel i index.html som dom andra htmlfilerna utgår ifrån. Det fösta var att jag hade dubbla id för "link1" till "link2", men det var egentligen inget probelm eftersom att de första instanserna av id:t var överflödigt, så jag tog bara bort det. Det andra var att några av mina länkar hade mellanslag, vilket jag tog bort för säkerhgets skull även om det fungerade i live server. Jag validerade csskoden på samma sida och hittade bara 1 parafraseringsfel vilket var ett mellanslag utan egentlig funktion som saknades vilket numera är på plats.
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
-
+    Nej testen skiljer sig inte alls vad jag har märkt, och det fungerar som det ska på alla webbläsare. Contrastchecker visar inga tecken på missnöjdhet heller.
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
