@@ -102,7 +102,7 @@ transition: all 0.3s;
     transform: translateX(calc(-30vw -  10px)); 
 }
 
-.branch{
+.content{
     position: relative;
     top: 9vw;
     border: 5px solid black;
@@ -121,12 +121,16 @@ transition: all 0.3s;
     width: 70vw;
     border: 5px solid black;
 }
-.branch h2{
+.content h2{
     font-size: 7vw;
-    position: relative;
-    
+    position: relative;    
+    margin-bottom: 4vw;
 }
-.branch p{
+.content h3{
+    font-size: 4vw;
+    position: relative;
+}
+.content p{
     font-size: 20px;
     margin: 25px;
 }
@@ -146,8 +150,7 @@ transition: all 0.3s;
 }
 .lowernav p{
     font-size: 3.5vw;
-    
-    margin: 15px;
+    margin: 10px;
 }
 .lowernav img{
     width: auto;
@@ -172,6 +175,9 @@ transition: all 0.3s;
 
     border-top: 5px solid black;
     border-left: 5px solid black;
+}
+.lowernav > .mainLinks:hover {
+    background-color: rgb(190, 190, 190);
 }
 .contact{
     position: relative;

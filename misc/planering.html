@@ -28,7 +28,7 @@
 
     <h3>2.1 Handskiss</h3>
     <!-- Här lägger du en bild på din handskiss av layouten. Viktigt att du beskriver vilka boxelement som ska användas. Visa även hur du tänker med ditt grid (Hur många kolumner?) -->
-
+    <img src="IMG_20191216_145919.jpg" alt="bild på planering"> Denna skiss är extremt primitiv och liknar inte särskillt mycket slutresultatet. Detta för att denna hemsida är den första jag skapar ordntligt och i och med det har det skett väldigt mycket ändringar då jag lärt mig mycket och dragit många slutsatser om layout under projektets gång. 
     <h3>2.2 Schema</h3>
     <!-- Vad ska du göra när? Inte för detaljerat. -->
 
@@ -127,6 +127,7 @@
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 12? -->
+            lägger in text och sprider utgångshtmlen till htmlsidor
             </td>
         </tr>
 
@@ -163,15 +164,15 @@
     Mellan lektionerna har jag nu nästan färdigställt all design och responsivitet, efter att på något sett missat att uppladda det sista fårn förra veckan till github. Jag upptäckte dock ett problem med "lower nav" vilket är att länkarna i den inte fungerade. Problemet hittade jag genom att första ta bort all min css, vilket gjorde så att länkarna fungerade, och sedan genom att följa upp det med en manuell binary search på csskoden där jag tog bort delar enligt binary search logiken. Jag kom till slut fram till att problemet var z-index taggen. Jag löste detta genom att flytta tagen till bara den delen av html som faktiskt bör beröras av tagen. Nästa lektion planerar jag att klippa bilderna så att dom passar bättre till formen, och att börja fylla sidan med faktisk innehåll.
     <h3>Lektion vecka 12</h3>
     <!-- Fyll på med dokumentation här. -->
-    Jag började med att validera htmlkoden via validator.w3.org och fick bara 2 fel i index.html som dom andra htmlfilerna utgår ifrån. Det fösta var att jag hade dubbla id för "link1" till "link2", men det var egentligen inget probelm eftersom att de första instanserna av id:t var överflödigt, så jag tog bara bort det. Det andra var att några av mina länkar hade mellanslag, vilket jag tog bort för säkerhgets skull även om det fungerade i live server. Jag validerade csskoden på samma sida och hittade bara 1 parafraseringsfel vilket var ett mellanslag utan egentlig funktion som saknades vilket numera är på plats.
+    Jag började med att validera htmlkoden via validator.w3.org och fick bara 2 fel i index.html som dom andra htmlfilerna utgår ifrån. Det fösta var att jag hade dubbla id för "link1" till "link2", men det var egentligen inget probelm eftersom att de första instanserna av id:t var överflödigt, så jag tog bara bort det. Det andra var att några av mina länkar hade mellanslag, vilket jag tog bort för säkerhgets skull även om det fungerade i live server. Jag validerade csskoden på samma sida och hittade bara 1 parafraseringsfel vilket var ett mellanslag utan egentlig funktion som saknades vilket numera är på plats. Jag har nu också fixat html taggarna så att dom har passande namn, istället för bara div eller som jag hade gjort innan använt dom på fel sätt.
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
-    Nej testen skiljer sig inte alls vad jag har märkt, och det fungerar som det ska på alla webbläsare. Contrastchecker visar inga tecken på missnöjdhet heller.
+    Nej testen skiljer sig inte alls vad jag har märkt, och det fungerar som det ska på alla webbläsare fungerar även på google på min telefon (one plus 6) men jag har däremot inte testat med några andra i verklighetenb utan bara i googles "inspektera"-läge. Contrastchecker visar inga tecken på missnöjdhet heller. Sidan bör vara totalt responsiv för alla (rektangulära) skärmar så länge dom har en bredd på över 200 pixlar vilket gäller på i princip alla skärmar (jag har testat).
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
-
+    Jag tycker att arbetet som helhet har gått bra för att vara min första relativt självständigt skapade hemsida. Det finns dock onekligen en hel del saker som jag hade kunnat arbeta vidare på om jag hade haft mer tid, eller helt enkelt varit mer van. Jag har lagt en stor del av tiden på att fixa en layout som dessutom skulle vara responsiv vilket för mig har varit väldigt givande då jag lärt mig mycket om css och vant mig vid det. Jag hade dock kunnat lägga den tiden på något annat som att utveckla själva sidan som helhet, och jag känner att oproportionerligt stor del av arbetstiden har gått till att pröva och ompröva css. Jag hade till exempel kunat göra sidan mer innehållsrik, både gällande funktioner, layout och rent innehåll. Jag hade även kunnat optimera den, men jag tror inte att den är så avancerad så att det behövs och jag har inte heller kunnskapen för det då vi i princip inte har arbetat med det. Dock har min skoldator ibland krachat när jag testat responsivitet ändrat på fönstrets storlek fram och tillbaks, det kan dock lika gärna ligga på skoldatorn, men hade kanske kunnat fixas, men jag har ingen aning om hur. Jag har dock en del saker med layouten jag gärna hade fixat om jag haft tid och det är storlek,proportioner och scaling. Just nu fungerar allting, men frågan är hur snyggt det är. Jag hade kunnat ha en helt annan approach till uppgiften vilket hade löst vissa av mina önskningar, genom att fokusera mest på innehåll och och funktioner istället för layout. Resultatet hade förmodligen inte varit snyggt men  det är en avvägning man för göra. Nästa liknande projekt jag gör kommer jag kunna lägga mindre tid på grundläggande saker och vara snabbare med css och på så sätt kunna lägg in mer content, och gärna mer javascript funktioner för att göra sidan lite mer intressant kanske även mer funktionnel. Jag funderade på att göra pianot på index.html klickbart så att man kunde spela på det som en gimmick, och om jag hade haft mer tid hade jag kunnat göra det som en rolig förbättring.
 </body>
 </html>
