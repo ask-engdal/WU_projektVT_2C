@@ -118,7 +118,7 @@ transition: all 0.3s;
 }
 .titleimage{
     position: relative;
-    width: 70vw;
+    width: 40vw;
     border: 5px solid black;
 }
 .content h2{
@@ -187,4 +187,62 @@ transition: all 0.3s;
 }
 .contact p{
     margin: 15px
+}
+article{
+    width: calc(100% + 10px);
+    height: auto;
+    grid-template-columns: 45vw;
+    grid-template-rows: auto;
+    border-bottom: 5px solid white;
+    background: white;
+    display: grid;
+    grid-template-areas: 
+    "p1 p2"
+    "p3 p4";
+    align-items: center;
+}
+@media screen and (max-width: 900px) {
+    article {
+        grid-template-columns: 95vw;
+        grid-template-areas: 
+        "p1"
+        "p2"
+        "p3"
+        "p4";
+    }
+    .titleimage{
+        width: 90vw;
+    }
+    .burgerlist{
+        right: calc(-100vw - 15px);
+        height:15vh;
+        top:9vw;
+        width:100vw;
+        display: flex;
+        flex-direction: row;
+        border-top: 5px solid rgb(0, 0, 0);
+        border-left: 5px solid rgb(0, 0, 0);
+        }
+    .listactive{
+        transform: translateX(calc(-100vw )); 
+    }
+    .burgerlist a {
+        border-top: 0px solid rgb(0, 0, 0);
+    }
+    .mainLinks{
+        width: 25%;
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+}
+.plats1{
+    grid-area: p1;
+}
+.plats2{
+    grid-area: p2;
+}
+.plats3{
+    grid-area: p3;
+}
+.plats4{
+    grid-area: p4;
 }
