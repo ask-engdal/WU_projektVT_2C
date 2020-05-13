@@ -9,7 +9,9 @@ a {
     color: black
 
 }
-
+p {
+    font-family:'Times New Roman';
+}
 body {
     overflow-x: hidden;   
 }
@@ -110,11 +112,9 @@ transition: all 0.3s;
     width: auto;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-}
-.zlevel{
-    z-index: -1;
 }
 .titleimage{
     position: relative;
@@ -191,24 +191,27 @@ transition: all 0.3s;
 article{
     width: calc(100% + 10px);
     height: auto;
-    grid-template-columns: 45vw;
+    grid-template-columns: 50vw;
     grid-template-rows: auto;
     border-bottom: 5px solid white;
     background: white;
     display: grid;
     grid-template-areas: 
     "p1 p2"
-    "p3 p4";
+    "p3 p4"
+    "p5 p5";
     align-items: center;
+    
 }
 @media screen and (max-width: 900px) {
     article {
-        grid-template-columns: 95vw;
+        grid-template-columns: 100vw;
         grid-template-areas: 
         "p1"
         "p2"
         "p3"
-        "p4";
+        "p4"
+        "p5";
     }
     .titleimage{
         width: 90vw;
@@ -217,21 +220,29 @@ article{
         right: calc(-100vw - 15px);
         height:15vh;
         top:9vw;
-        width:100vw;
+        width:calc(100vw - 5px);
         display: flex;
         flex-direction: row;
         border-top: 5px solid rgb(0, 0, 0);
-        border-left: 5px solid rgb(0, 0, 0);
+        border-left: 0px solid rgb(0, 0, 0);
         }
     .listactive{
-        transform: translateX(calc(-100vw )); 
+        transform: translateX(calc(-100vw - 10px)); 
     }
     .burgerlist a {
+        height: auto;
         border-top: 0px solid rgb(0, 0, 0);
     }
-    .mainLinks{
+    .burgerlist .mainLinks{
+        width: auto;
+        height: 100%;
         width: 25%;
-        border-right: 5px solid rgb(0, 0, 0);
+        border-left: 5px solid rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+        
     }
 }
 .plats1{
@@ -245,4 +256,16 @@ article{
 }
 .plats4{
     grid-area: p4;
+}
+.plats5{
+    grid-area: p5;
+}
+iframe{
+    border: 5px solid rgb(0, 0, 0);
+    margin: 25px;
+    width: 35vw;
+    height: 25vw;
+}
+.disclaimer{
+    color: rgb(97, 97, 97)
 }
