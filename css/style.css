@@ -131,7 +131,7 @@ transition: all 0.3s;
     position: relative;
 }
 .content p{
-    font-size: 20px;
+    font-size: 200%;
     margin: 25px;
 }
 
@@ -260,6 +260,9 @@ article{
 .plats5{
     grid-area: p5;
 }
+.plats6{
+    grid-area: p6;
+}
 iframe{
     border: 5px solid rgb(0, 0, 0);
     margin: 25px;
@@ -268,4 +271,9 @@ iframe{
 }
 .disclaimer{
     color: rgb(97, 97, 97)
+}
+.contentimage{
+    width: 50%;
+    height: auto;
+    border: 5px solid rgb(0, 0, 0);
 }
