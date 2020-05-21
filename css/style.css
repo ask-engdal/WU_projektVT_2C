@@ -123,7 +123,7 @@ transition: all 0.3s;
     border: 5px solid black;
 }
 .content h2{
-    font-size: 7vw;
+    font-size: 6vw;
     position: relative;    
     margin-bottom: 4vw;
 }
@@ -136,7 +136,7 @@ transition: all 0.3s;
     position: relative;
 }
 .content p{
-    font-size: 200%;
+    font-size: 1.2vw;
     margin: 2.5vw;
 }
 
@@ -208,7 +208,7 @@ article{
     align-items: center;
     
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-aspect-ratio:1/1) {
     article {
         grid-template-columns: 100vw;
         grid-template-areas: 
@@ -219,7 +219,7 @@ article{
         "p5";
     }
     .content p{
-        font-size: 130%;
+        font-size: 3vw;
     }
     .titleimage{
         width: 90vw;
@@ -264,7 +264,7 @@ article{
     .content h4{
         font-size: 5vw;
         position: relative;
-    }
+    } 
     iframe{
         width: 80%;
         height: 10vw;
