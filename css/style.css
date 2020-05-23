@@ -7,10 +7,13 @@
 a {
     text-decoration: none;
     color: black
-
+}
+img{
+    border: 5px solid black;
 }
 p {
     font-family:'Times New Roman';
+    text-align: left
 }
 body {
     overflow-x: hidden;   
@@ -29,6 +32,7 @@ body {
     position: fixed;
     display:flex;
     border: 5px solid black;
+    top: 0
 
 }
 .burgermenu{
@@ -122,6 +126,10 @@ transition: all 0.3s;
     width: 40vw;
     border: 5px solid black;
 }
+#tallpic{
+    height: 60vh;
+    width: auto
+}
 .content h2{
     font-size: 6vw;
     position: relative;    
@@ -130,10 +138,12 @@ transition: all 0.3s;
 .content h3{
     font-size: 4vw;
     position: relative;
+    margin-top: 4vw 
 }
 .content h4{
     font-size: 2.5vw;
     position: relative;
+    margin: 2vw
 }
 .content p{
     font-size: 1.2vw;
@@ -156,6 +166,7 @@ transition: all 0.3s;
 .lowernav p{
     font-size: 3.5vw;
     margin: 10px;
+    text-align: center;
 }
 .lowernav img{
     width: auto;
@@ -197,8 +208,7 @@ article{
     width: calc(100% + 10px);
     height: auto;
     grid-template-columns: 50vw;
-    grid-template-rows: auto;
-    border-bottom: 5px solid white;
+    grid-template-rows: 90vh auto;
     background: white;
     display: grid;
     grid-template-areas: 
@@ -208,9 +218,36 @@ article{
     align-items: center;
     
 }
+.subgridO{
+    margin: 2.5vw;
+    width: 45vw;
+    height: auto;
+    grid-template-columns: 23vw;
+    grid-template-rows: auto;
+    display: grid;
+    grid-template-areas: 
+    "sub1 sub1"
+    "sub2 sub3";
+}
+.subgridO p{
+    margin: 0px 0vw 0px 0px
+}
+.sub1{
+    grid-area: sub1;
+}
+.sub2{ 
+    grid-area: sub2;
+}
+.sub3{ 
+    grid-area: sub3;
+}
+.subimage{
+    width: 90%;
+}
 @media screen and (max-aspect-ratio:1/1) {
     article {
         grid-template-columns: 100vw;
+        grid-template-rows: auto;
         grid-template-areas: 
         "p1"
         "p2"
@@ -223,6 +260,10 @@ article{
     }
     .titleimage{
         width: 90vw;
+    }
+    #tallpic{
+        height: auto;
+        width: 60vw;
     }
     .burgerlist{
         right: calc(-100vw - 15px);
@@ -251,13 +292,16 @@ article{
         justify-content: center;
         align-items: center; 
     }
+    .plats2{
+        margin-bottom: 20vw
+    }
     .content h2{
         font-size: 8vw;
         position: relative;    
         margin-bottom: 4vw;
         margin-top: 4vw;
     }
-    .content h3{
+    .content {
         font-size: 7vw;
         position: relative;
     }
@@ -268,6 +312,10 @@ article{
     iframe{
         width: 80%;
         height: 10vw;
+    }
+    .subgridO{
+        width: 95vw;
+        grid-template-columns: 50vw;
     }
 }
 @media screen and (max-width: 500px) {
@@ -306,10 +354,11 @@ iframe{
 }
 .disclaimer{
     color: rgb(97, 97, 97);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center
 }
 .contentimage{
-    width: 50%;
+    width: 40%;
     height: auto;
     border: 5px solid rgb(0, 0, 0);
 }
